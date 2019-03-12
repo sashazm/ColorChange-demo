@@ -7,7 +7,6 @@ const bodyColorize = document.querySelector('body');
 // Select the span where hex value will be injected
 const hex = document.querySelector('.hex');
 
-
 // Create a function that generates random colors
 function colors() {
   const rgb = () => ('0' + (Math.random() * 256).toString(16)).slice(-2);
@@ -20,6 +19,8 @@ colorBtn.addEventListener('click', changeColor);
 
 // changeColor function call
 function changeColor () {
-  bodyColorize.style.backgroundColor = colors();
-  hex.innerHTML = colors("hexCol");
+  const hexColor = colors();
+  bodyColorize.style.backgroundColor = hexColor;
+  hex.innerHTML = hexColor;
 }
+console.log(hexColor)
