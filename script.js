@@ -23,4 +23,3 @@ function changeColor () {
   bodyColorize.style.backgroundColor = hexColor;
   hex.innerHTML = hexColor;
 }
-console.log(hexColor)
